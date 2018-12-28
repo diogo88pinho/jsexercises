@@ -13,13 +13,13 @@ function addMovie() {
     let rating = $("[name='rating']").val();
 
     let $newLine = $("<tr>");
-    let $title = $("<td>",{text: title,class:'text-center'});
+    let $title = $("<td>", { text: title, class: 'text-center' });
     $newLine.append($title);
-    let $rating = $("<td>",{text: rating,class:'text-center'});
+    let $rating = $("<td>", { text: rating, class: 'text-center' });
     $newLine.append($rating);
 
-    $del = $("<button>",{text: 'Delete',class:'text-center',style:"width:100px"});
-    $del.on('click',function() {
+    $del = $("<button>", { text: 'Delete', class: 'text-center', style: "width:100px" });
+    $del.on('click', function () {
         $newLine.remove();
     });
     $newLine.append($del);
